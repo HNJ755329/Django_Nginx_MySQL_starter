@@ -81,7 +81,7 @@ If you will see this page, you success !
 This starter kit is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Donate
-I receive BTC donate. Thank you.
+I receive BTC donate. Thank you.  
 ![QRL](https://user-images.githubusercontent.com/11535206/59242610-b0c0fa80-8bfb-11e9-9bdc-caa4764dc14e.png)  
 3PfsHj5kYY6m9dGCcoQXb3ionu6cKJeG95
 
