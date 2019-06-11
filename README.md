@@ -3,10 +3,10 @@ You can install easily Django+Nginx+MySQL in your local and Server(VPS) with doc
 
 
 ## Requirement
-This is require docker and docker-compose.
+This starter kit is require docker and docker-compose.
 ### Install docker and docker-compose
 You should install docker and docker-compose.
-- docker
+- docker  
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 - docker-compsoe
 ```
@@ -14,7 +14,7 @@ sudo apt install -y docker-compose
 ```
 ## USAGE
 
-First of all, you create docker-project.
+First of all, you create django project.
 ```
 docker-compose run python django-admin.py startproject app .
 ```
@@ -78,5 +78,5 @@ If you will see this page, you success !
 ![django-image](https://user-images.githubusercontent.com/11535206/59239910-b6661280-8bf2-11e9-84e8-1733e94aa033.png)
 
 ## Licence
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This starter kit is licensed under the MIT License - see the LICENSE.md file for details
 
