@@ -1,5 +1,5 @@
 # Django_Nginx_MySQL_starter
-You can install easily Django+Nginx+MySQL in your local and Server(VPS) with docker.
+You can start easily Django + Nginx + MySQL on your Local and Server(VPS) with docker.
 
 
 ## Requirement
@@ -12,14 +12,14 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 sudo apt install -y docker-compose
 ```
-## USAGE
+## Usage
 
 First of all, you create django project.
 ```
 docker-compose run python django-admin.py startproject app .
 ```
 
-### Migrations
+### Prepare Migrations
 Django default sql is sqlite.
 So before migration command, you fix /src/app/settings.py
 
@@ -79,4 +79,9 @@ If you will see this page, you success !
 
 ## Licence
 This starter kit is licensed under the MIT License - see the LICENSE.md file for details
+
+## Donate
+I receive BTC donate. Thank you.
+![QRL](https://user-images.githubusercontent.com/11535206/59242610-b0c0fa80-8bfb-11e9-9bdc-caa4764dc14e.png)  
+3PfsHj5kYY6m9dGCcoQXb3ionu6cKJeG95
 
