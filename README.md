@@ -6,9 +6,9 @@ You can install easily Django+Nginx+MySQL in your local and Server(VPS) with doc
 This is require docker and docker-compose.
 ### Install docker and docker-compose
 You should install docker and docker-compose.
-docker
+- docker
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
-docker-compsoe
+- docker-compsoe
 ```
 sudo apt install -y docker-compose
 ```
@@ -41,7 +41,9 @@ import pymysql
 
 # connect mysql
 pymysql.install_as_MySQLdb()
-
+```
+and you add DATABASE,
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -70,12 +72,11 @@ docker-compose run python ./manage.py createsuperuser
 docker-compose up -d
 ```
 
-You access below url in your blowser.
-http://localhost
+You access http://localhost .
 If you will see this page, you success !
 
-[django-image](https://user-images.githubusercontent.com/11535206/59239910-b6661280-8bf2-11e9-84e8-1733e94aa033.png)
-## CUSTOMIZE / ADDITIONAL
+![django-image](https://user-images.githubusercontent.com/11535206/59239910-b6661280-8bf2-11e9-84e8-1733e94aa033.png)
 
 ## Licence
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
