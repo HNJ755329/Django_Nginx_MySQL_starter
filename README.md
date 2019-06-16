@@ -9,13 +9,13 @@ You should install docker and docker-compose.
 - docker  
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 - docker-compsoe
-```
+```console
 sudo apt install -y docker-compose
 ```
 ## Usage
 
 First of all, you create django project.
-```
+```console
 docker-compose run python django-admin.py startproject app .
 ```
 
@@ -23,7 +23,7 @@ docker-compose run python django-admin.py startproject app .
 Django default sql is sqlite.
 So before migration command, you fix /src/app/settings.py
 
-```
+```Python:setting.py
 """
 Django settings for app project.
 
@@ -43,7 +43,7 @@ import pymysql
 pymysql.install_as_MySQLdb()
 ```
 and you add DATABASE,
-```
+```Python:setting.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -52,23 +52,27 @@ DATABASES = {
         'PASSWORD': 'password',
         'HOST': 'db',
         'PORT': '3306',
+        'TEST': {
+            'NAME': 'test_todoList',
+        },
+
     }
 }
 ```
 
 ### Migrations
-```
+```console
 docker-compose run python ./manage.py makemigrations
 docker-compose run python ./manage.py migrate
 ```
 
 ### Create superuser
-```
+```console
 docker-compose run python ./manage.py createsuperuser
 ```
 
 ### Start server in your local.
-```
+```console
 docker-compose up -d
 ```
 
