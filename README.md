@@ -10,13 +10,13 @@ You should install docker and docker-compose.
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 - docker-compsoe
 ```console
-sudo apt install -y docker-compose
+$ sudo apt install -y docker-compose
 ```
 ## Usage
 
 First of all, you create django project.
 ```console
-docker-compose run python django-admin.py startproject app .
+$ docker-compose run python django-admin.py startproject app .
 ```
 
 ### Prepare Migrations
@@ -62,18 +62,18 @@ DATABASES = {
 
 ### Migrations
 ```console
-docker-compose run python ./manage.py makemigrations
-docker-compose run python ./manage.py migrate
+$ docker-compose run python ./manage.py makemigrations
+$ docker-compose run python ./manage.py migrate
 ```
 
 ### Create superuser
 ```console
-docker-compose run python ./manage.py createsuperuser
+$ docker-compose run python ./manage.py createsuperuser
 ```
 
 ### Start server in your local.
 ```console
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 You access http://localhost .
