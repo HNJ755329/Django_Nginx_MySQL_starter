@@ -23,7 +23,7 @@ docker-compose run python django-admin.py startproject app .
 Django default sql is sqlite.
 So before migration command, you fix /src/app/settings.py
 
-```Python:setting.py
+```Python:settings.py
 """
 Django settings for app project.
 
@@ -43,7 +43,7 @@ import pymysql
 pymysql.install_as_MySQLdb()
 ```
 and you add DATABASE,
-```Python:setting.py
+```Python:settings.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
